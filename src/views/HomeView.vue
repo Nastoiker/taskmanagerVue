@@ -56,8 +56,11 @@ export default {
 .form-group {
   margin-bottom: 10px;
 }
-.task-home {
-  display: flex;
-  justify-content: space-between;
+
+@media (min-width:1400px) {
+  .task-home {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 </style>

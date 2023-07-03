@@ -29,6 +29,7 @@ textarea {
   background: #f2f2f2;
   margin: 2rem auto;
   padding: 2rem;
+  width: 100%;
   resize: none;
 }
 </style>
