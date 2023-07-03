@@ -1,5 +1,5 @@
 <template>
-  <div class="post">
+  <div class="task">
     <div>
       <div>{{ task.id }}</div>
       <div><strong>Название:</strong> {{ task.title }}</div>
@@ -8,7 +8,7 @@
         {{ new Date(task.date).toString() }}
       </div>  </div>
     </div>
-    <div class="post__btns">
+    <div class="task__btns">
 
       <button
           @click="$emit('remove', task)"
@@ -37,15 +37,22 @@ export default {
 </script>
 
 <style scoped>
-.post {
+.task {
   padding: 15px;
   border: 2px solid teal;
   margin-top: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
-.post__btns {
+.task__btns {
   display: flex;
+}
+@media (min-width:1400px) {
+  .task {
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 </style>

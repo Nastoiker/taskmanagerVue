@@ -12,10 +12,9 @@ import BaseInput from "@/components/InputComponent.vue"
       <div>
         <CreateTask  @create="addTask" />
       </div>
-      <div style="min-width: 500px">
+      <div style="width: fit-content">
         <BaseInput :model-value="searchValue"  @update:model-value="setSearchQuery" label="Поиск задачи" />
-        <task-list :tasks="sortedAndSearchedTasks" @remove="removeTodo" />
-
+          <task-list :tasks="sortedAndSearchedTasks" @remove="removeTodo" />
       </div>
     </div>
 
